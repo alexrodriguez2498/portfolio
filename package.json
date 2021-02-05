@@ -27,11 +27,16 @@
       "eslint --fix"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "dependencies": {
     "animejs": "^3.1.0",
     "babel-plugin-styled-components": "^1.10.6",
     "firebase-tools": "^9.3.0",
-    "gatsby": "^2.18.7",
+    "gatsby": "^2.32.2",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-google-analytics": "^2.1.29",
     "gatsby-plugin-manifest": "^2.2.31",
@@ -68,7 +73,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
     "gatsby-remark-code-titles": "^1.1.0",
-    "husky": "^4.2.3",
+    "husky": "^4.3.8",
     "lint-staged": "^10.1.2",
     "prettier": "^2.0.4"
   }
