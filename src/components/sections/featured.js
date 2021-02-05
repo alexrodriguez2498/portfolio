@@ -216,7 +216,7 @@ const StyledProject = styled.div`
       }
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 100%;
@@ -281,14 +281,14 @@ const Featured = () => {
   const revealProjects = useRef([]);
   useEffect(() => {
     sr.reveal(revealTitle.current, srConfig());
-    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
+    revealProjects.current.forEach((ref, i) =>
+      sr.reveal(ref, srConfig(i * 100)),
+    );
   }, []);
 
   return (
     <section id="projects">
-      <h2 className="numbered-heading" ref={revealTitle}>
-        Some Things I’ve Built
-      </h2>
+      <h2 ref={revealTitle}>Some Things I’ve Built</h2>
 
       <div>
         {featuredProjects &&
@@ -297,11 +297,17 @@ const Featured = () => {
             const { external, title, tech, github, cover } = frontmatter;
 
             return (
-              <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
+              <StyledProject
+                key={i}
+                ref={el => (revealProjects.current[i] = el)}
+              >
                 <div className="project-content">
                   <p className="project-overline">Featured Project</p>
                   <h3 className="project-title">{title}</h3>
-                  <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
+                  <div
+                    className="project-description"
+                    dangerouslySetInnerHTML={{ __html: html }}
+                  />
 
                   {tech.length && (
                     <ul className="project-tech-list">
@@ -318,7 +324,11 @@ const Featured = () => {
                       </a>
                     )}
                     {external && (
-                      <a href={external} aria-label="External Link" className="external">
+                      <a
+                        href={external}
+                        aria-label="External Link"
+                        className="external"
+                      >
                         <Icon name="External" />
                       </a>
                     )}
@@ -327,7 +337,11 @@ const Featured = () => {
 
                 <div className="project-image">
                   <a href={external ? external : github ? github : '#'}>
-                    <Img fluid={cover.childImageSharp.fluid} alt={title} className="img" />
+                    <Img
+                      fluid={cover.childImageSharp.fluid}
+                      alt={title}
+                      className="img"
+                    />
                   </a>
                 </div>
               </StyledProject>

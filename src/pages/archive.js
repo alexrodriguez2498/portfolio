@@ -156,7 +156,7 @@ const ArchivePage = ({ location, data }) => {
               <tr>
                 <th>Year</th>
                 <th>Title</th>
-                <th className="hide-on-mobile">Made at</th>
+                {/* <th className="hide-on-mobile">Made at</th> */}
                 <th className="hide-on-mobile">Built with</th>
                 <th>Link</th>
               </tr>
@@ -172,17 +172,19 @@ const ArchivePage = ({ location, data }) => {
                     android,
                     title,
                     tech,
-                    company,
+                    // company,
                   } = node.frontmatter;
                   return (
                     <tr key={i} ref={el => (revealProjects.current[i] = el)}>
-                      <td className="overline year">{`${new Date(date).getFullYear()}`}</td>
+                      <td className="overline year">{`${new Date(
+                        date,
+                      ).getFullYear()}`}</td>
 
                       <td className="title">{title}</td>
 
-                      <td className="company hide-on-mobile">
+                      {/* <td className="company hide-on-mobile">
                         {company ? <span>{company}</span> : <span>—</span>}
-                      </td>
+                      </td> */}
 
                       <td className="tech hide-on-mobile">
                         {tech.length > 0 &&
@@ -190,7 +192,9 @@ const ArchivePage = ({ location, data }) => {
                             <span key={i}>
                               {item}
                               {''}
-                              {i !== tech.length - 1 && <span className="separator">&middot;</span>}
+                              {i !== tech.length - 1 && (
+                                <span className="separator">&middot;</span>
+                              )}
                             </span>
                           ))}
                       </td>
@@ -213,7 +217,10 @@ const ArchivePage = ({ location, data }) => {
                             </a>
                           )}
                           {android && (
-                            <a href={android} aria-label="Google Play Store Link">
+                            <a
+                              href={android}
+                              aria-label="Google Play Store Link"
+                            >
                               <Icon name="PlayStore" />
                             </a>
                           )}
