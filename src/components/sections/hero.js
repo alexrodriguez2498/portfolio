@@ -52,7 +52,7 @@ const Hero = () => {
   const three = <h3 className="big-heading">I build things for the web.</h3>;
   const four = (
     <p>
-      I'm a software Developer based in Lima, PE specializing in building (and
+      I'm a software Front-End Developer specializing in building (and
       occasionally designing) exceptional websites, applications, and everything
       in between.
     </p>

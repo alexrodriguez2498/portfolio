@@ -7,7 +7,7 @@ module.exports = {
       'Alex Rodriguez  is a Frontend Developer specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.',
     siteUrl: 'https://alexrodriguez.dev', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bchiang7',
+    // twitterUsername: '@bchiang7',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

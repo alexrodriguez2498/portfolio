@@ -118,7 +118,7 @@ const About = () => {
     query {
       avatar: file(
         sourceInstanceName: { eq: "images" }
-        relativePath: { eq: "me.jpg" }
+        relativePath: { eq: "me.png" }
       ) {
         childImageSharp {
           fluid(maxWidth: 500, traceSVG: { color: "##8892b0" }) {
@@ -139,9 +139,9 @@ const About = () => {
     'JavaScript (ES6+)',
     'HTML & (S)CSS',
     'React',
-    'Vue',
+    'Firebase',
     'Node.js',
-    'WordPress',
+    'React Native',
   ];
 
   return (
@@ -151,7 +151,7 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>Hello! I'm Brittany, a software engineer based in Boston, MA.</p>
+            <p>Hello! I'm Alex, a Software Front-End Devleoper </p>
 
             <p>
               I enjoy creating things that live on the internet, whether that be
@@ -161,15 +161,15 @@ const About = () => {
             </p>
 
             <p>
-              Shortly after graduating from{' '}
-              <a href="https://www.ccis.northeastern.edu">
-                Northeastern University
-              </a>
-              , I joined the engineering team at{' '}
-              <a href="https://www.upstatement.com">Upstatement</a> where I work
-              on a wide variety of interesting and meaningful projects on a
-              daily basis.
+              Currently i am Studying at{' '}
+              <a href="https://www.platzi.com">Platzi</a>, which is the best
+              tech school in LATAM. Recently i joined the design and development
+              team at <a href="https://www.lsmcompany.com">LSM Company</a> where
+              I work on a wide variety of interesting and meaningful projects on
+              a daily basis.
             </p>
+
+            <p>#NeverStopLearning</p>
 
             <p>Here are a few technologies I've been working with recently:</p>
           </div>

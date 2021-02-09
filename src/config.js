@@ -10,17 +10,17 @@ module.exports = {
       name: 'Instagram',
       url: 'https://www.instagram.com/alexrodriguez.dev',
     },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
-    },
+    // {
+    //   name: 'Twitter',
+    //   url: 'https://twitter.com/bchiang7',
+    // },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/alex-rodriguez-645057161/',
+      url: 'https://www.linkedin.com/in/alex-leonardo-rodriguez-645057161/',
     },
     {
       name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
+      url: 'https://codepen.io/Alexrodriguez2498',
     },
   ],
 
